@@ -6,5 +6,9 @@ const dateEl = document.getElementById('date-picker');
 const today = new Date().toISOString().split('T')[0];
 dateEl.setAttribute('min', today);
 
+// Set Date Input Min with Today's Date
+function updateCountdown(e) {
+  e.preventDefault();
+}
 //Event Listeners
 countdownForm.addEventListener('submit', updateCountdown);
