@@ -16,5 +16,5 @@ function updateCountdown(e) {
   countdownDate = e.srcElement[0].value;
 }
 
-//Event Listeners
+// Event Listeners
 countdownForm.addEventListener('submit', updateCountdown);
