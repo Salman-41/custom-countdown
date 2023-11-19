@@ -15,6 +15,8 @@ function updateCountdown(e) {
   e.preventDefault();
   countdownTitle = e.srcElement[0].value;
   countdownDate = e.srcElement[0].value;
+  // Get number version of current Date, updateDom
+  countdownValue = new Date(countdownDate).getTime();
 }
 
 // Event Listeners
