@@ -8,6 +8,7 @@ dateEl.setAttribute('min', today);
 
 let countdownTitle = '';
 let countdownDate = '';
+let countdownValue = Date;
 
 // Set Date Input Min with Today's Date
 function updateCountdown(e) {
