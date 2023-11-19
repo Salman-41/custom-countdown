@@ -15,6 +15,11 @@ let countdownTitle = '';
 let countdownDate = '';
 let countdownValue = Date;
 
+const second = 1000;
+const minute = second * 60;
+const hour = minute * 60;
+const day = hour * 24;
+
 // Populate Countdown / Complete UI
 function updateDOM() {
   const now = new Date().getTime();
