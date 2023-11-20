@@ -27,6 +27,18 @@ function updateDOM() {
   const hours = Math.floor((distance % day) / hour);
   const minutes = Math.floor((distance % hour) / minute);
   const seconds = Math.floor((distance % minute) / second);
+
+  // Populate Countdown
+  countdownElTitle.textContent = `${countdownTitle}`;
+  timeElements[0].textContent = `${days}`;
+  timeElements[1].textContent = `${hours}`;
+  timeElements[2].textContent = `${minutes}`;
+  timeElements[3].textContent = `${seconds}`;
+
+  //Hide Input
+  inputContainer.hidden = true;
+  //Show Countdown
+  countdownEl.hidden = false;
 }
 
 // Set Date Input Min with Today's Date
