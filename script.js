@@ -24,7 +24,9 @@ function updateDOM() {
   const now = new Date().getTime();
   const distance = countdownValue - now;
   const days = Math.floor(distance / day);
-  const hours = Math.floor(distance % day);
+  const hours = Math.floor((distance % day) / hour);
+  const minutes = Math.floor((distance % hour) / minute);
+  const seconds = Math.floor((distance % minute) / second);
 }
 
 // Set Date Input Min with Today's Date
