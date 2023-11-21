@@ -41,7 +41,7 @@ function updateDOM() {
     inputContainer.hidden = true;
     //Show Countdown
     countdownEl.hidden = false;
-  });
+  }, second);
 }
 
 // Set Date Input Min with Today's Date
