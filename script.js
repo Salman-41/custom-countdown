@@ -33,6 +33,18 @@ function updateDOM() {
     const minutes = Math.floor((distance % hour) / minute);
     const seconds = Math.floor((distance % minute) / second);
 
+    //Hide Input
+    inputContainer.hidden = true;
+    // If the countdown had ended, show complete
+    if (distance < 0) {
+      countdownEl.hidden = true;
+      clearInterval(countdownActive);
+      completeElInfo.textContent = `${countdownTitle} finished on ${countdownDate}`;
+      completeEl.hidden = false;
+    } else {
+      // Else, show the countdown in progress
+    }
+
     // Populate Countdown
     countdownElTitle.textContent = `${countdownTitle}`;
     timeElements[0].textContent = `${days}`;
@@ -40,8 +52,6 @@ function updateDOM() {
     timeElements[2].textContent = `${minutes}`;
     timeElements[3].textContent = `${seconds}`;
 
-    //Hide Input
-    inputContainer.hidden = true;
     //Show Countdown
     countdownEl.hidden = false;
   }, second);
