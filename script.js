@@ -64,7 +64,7 @@ function updateCountdown(e) {
     title: countdownTitle,
     date: countdownDate,
   };
-
+  localStorage.setItem('countdown', JSON.stringify(savedCountdown));
   // Get number version of current Date, updateDom
 
   // Check for valid date
