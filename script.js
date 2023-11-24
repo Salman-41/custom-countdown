@@ -90,6 +90,10 @@ function reset() {
   countdownDate = '';
 }
 
+function restorePreviousCountdown() {
+  // Get countdown from localStorage if available
+}
+
 // Event Listeners
 countdownForm.addEventListener('submit', updateCountdown);
 countdownBtn.addEventListener('click', reset);
