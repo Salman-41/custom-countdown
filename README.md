@@ -59,4 +59,4 @@ Contributions are welcome! If you have any suggestions, improvements, or feature
 
 ## Acknowledgments
 
-Special thanks to [https://jacinto.design/](Jacinto) for guidance.
+Special thanks to [Jacinto](https://jacinto.design/) for guidance.
