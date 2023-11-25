@@ -57,10 +57,6 @@ Feel free to incorporate or modify this countdown timer in your projects. Custom
 
 Contributions are welcome! If you have any suggestions, improvements, or feature requests, please create an issue or a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE.md).
-
 ## Acknowledgments
 
 Special thanks to [insert name or resource] for inspiration or guidance.
