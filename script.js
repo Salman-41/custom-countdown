@@ -43,7 +43,7 @@ function updateDOM() {
       completeElInfo.textContent = `${countdownTitle} finished on ${countdownDate}`;
       completeEl.hidden = false;
     } else {
-      // Else, show the countdown in progress
+      // else, show the countdown in progress
       countdownElTitle.textContent = `${countdownTitle}`;
       timeElements[0].textContent = `${days}`;
       timeElements[1].textContent = `${hours}`;
